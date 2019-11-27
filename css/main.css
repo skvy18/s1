@@ -1,0 +1,139 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: circular std, sans-serif;
+}
+
+
+body {
+    /*
+        no space between rows and browser window
+     */
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+    /*
+    This automatically changes the direct children of body to grid items.
+    */
+    display: grid;
+    /*
+        get the footer pushed down to the end of the page
+        min-content: My first (aka header) row and last row (aka footer) will take up the minimum space they need.
+        auto: My second row (aka main) will take up the remainder of the parent container’s height.
+     */
+    grid-template-rows: min-content auto min-content ;
+    grid-template-columns: 100%;
+
+}
+
+header ul {
+    background-color: lightgray;
+    display: grid;
+    /*
+        This creates 4 columns, each with a width of the minimum space they need.
+     */
+    grid-template-columns: repeat(4, min-content);
+    /*
+        space out the navigation items along the inline axis (row) of the grid container.
+     */
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 600px) {
+    header ul {
+        grid-template-columns: none;
+    }
+}
+
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+main {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    justify-content: center;
+    align-content: center;
+}
+
+.box {
+    display: grid;
+    width: 80vw;
+    border: 1px black solid;
+    margin: 5px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: black;
+}
+
+
+p {
+    color: black;
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+
+#img_programmer {
+    width: 500px;
+    height: 250px;
+}
+
+#skill-cards{
+    display: flex;
+
+}
+
+#webdev-skills {
+    float: left;
+    width: 50%;
+    margin: 20px;
+    text-align: center;
+    border-color: grey;
+    border-style: outset;
+    border-width: 2px;
+}
+
+
+
+#mobiledev-skills {
+    float: left;
+    width: 50%;
+    margin: 20px;
+    text-align: center;
+    border-color: grey;
+    border-style: outset;
+    border-width: 2px;
+}
+
+
+footer {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+
+
+
+
