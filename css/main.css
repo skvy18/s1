@@ -65,6 +65,13 @@ li {
     text-align: right;
 }
 
+.grid-wrapper {
+    /*changed the height from 100% to auto as the layout breaks when the height of the content 'overflows'.*/
+    height: auto;
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+}
+
 main {
     display: grid;
     grid-template-rows: min-content min-content;
@@ -72,7 +79,7 @@ main {
     align-content: center;
 }
 
-.box {
+.child-grid {
     display: grid;
     width: 80vw;
     border: 1px black solid;
@@ -100,39 +107,49 @@ p {
     height: 250px;
 }
 
-#skill-cards{
+.flex-wrapper{
     display: flex;
-
+    margin: 10px;
 }
 
-#webdev-skills {
-    float: left;
-    width: 50%;
-    margin: 20px;
+
+.card {
+    flex-grow: 1;
     text-align: center;
+    margin: 5px;
     border-color: grey;
     border-style: outset;
     border-width: 2px;
 }
-
-
-
-#mobiledev-skills {
-    float: left;
-    width: 50%;
-    margin: 20px;
-    text-align: center;
-    border-color: grey;
-    border-style: outset;
-    border-width: 2px;
-}
-
 
 footer {
     background-color: lightgray;
     padding: 10px;
 }
 
+
+@media only screen and (max-width: 850px) {
+
+    /*changes to code to arrange aside below article. */
+    .grid-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        order: 2;
+    }
+
+    /*end of changes*/
+
+    .flex-wrapper {
+        flex-direction: column;
+    }
+
+    .image {
+        margin-bottom: 20px;
+    }
+}
 
 
 
