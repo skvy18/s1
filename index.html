@@ -6,6 +6,8 @@
     <meta name="viewport" content="width-device-width, initial-scale =1.0" http-equiv="content-type" charset="utf-8">
     <title>Livia Welschinger</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <style type="text/css">
 
 
@@ -13,7 +15,50 @@
 </head>
 
 <body>
+<!--<div class="menu-wrapper">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<header class="showcase">
+    <div class="container showcase-inner">
+        <h1>Welcome</h1>
+        <p>Lorem ipsum bla bla bla</p>
+    </div>
+
+</header>-->
+
+
 <div class="grid-wrapper">
+    <div class="menu-wrapper">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li> <a href="#about">About</a></li>
+                        <li> <a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <div id="logo"></div>
         <div id="nav">
@@ -29,14 +74,24 @@
     </header>
     <main>
         <div class="child-grid" id="home">
-            <div>
-                <h1>Livia Welschinger</h1>
-                <p>
-                    Full stack developer
-                </p>
+            <div class="flex-wrapper">
+                    <div class="flex-item" id="flex-item-home">
+                        <br>
+                        <br>
+                        <br>
+                        <h1>Hi, I'm Livia</h1>
+                        <h1 class="violet">
+                            Full stack developer
+                        </h1>
+                    </div>
+                    <div class="flex-item">
+                        <p>Place image here</p>
+                        <img src="images/profil.png" >
+                    </div>
+
+                </div>
                 <div>
                 </div>
-            </div>
 
         </div>
         <div class="child-grid" id="about">
@@ -51,10 +106,10 @@
         <div class="child-grid" id="skills">
             <h1>Skills</h1>
             <div class="flex-wrapper">
-                <div class="card">
+                <div class="cards">
                     <p>Backend</p>
                 </div>
-                <div  class="card">
+                <div  class="cards">
                     <p>Frontend</p>
                 </div>
             </div>
@@ -63,28 +118,22 @@
         <div class="child-grid" id="projects">
             <h1>Projects</h1>
             <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                I really enjoy building things and being creative. Have a look on some of my projects I have been working on.
 
             </p>
         </div>
         <div class="child-grid" id="contact">
             <h1>Contact</h1>
             <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
+                If you want to get to know more about me and my work, are interested in a cooperation or have any questions, feel free to contact me.
             </p>
         </div>
     </main>
     <footer>
         Footer
     </footer>
-
-
 </div>
+
 
 
 

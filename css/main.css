@@ -1,3 +1,68 @@
+:root{
+    --primary-color: rgba(13,110, 139, 0.75);
+    --overlay-color: rgba(24,39, 51, 0.85);
+    --menu-speed: 0.75s;
+}
+
+/** {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}*/
+
+/*
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+
+}
+
+.showcase{
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    /*
+    because overflow is absolute positioned
+
+    position: relative;
+}
+ */
+
+
+/*.showcase:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+showcase .showcase-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+*!*/
+
+
+
+
+
+
+
 html {
     height: 100%;
     width: 100%;
@@ -66,7 +131,7 @@ li {
 }
 
 .grid-wrapper {
-    /*changed the height from 100% to auto as the layout breaks when the height of the content 'overflows'.*/
+    /*changed the height from 100% to auto as the layout breaks when the height of the content 'overflows'*/
     height: auto;
     display: grid;
     grid-template-rows: min-content auto min-content;
@@ -82,7 +147,7 @@ main {
 .child-grid {
     display: grid;
     width: 80vw;
-    border: 1px black solid;
+    /*border: 1px black solid;*/
     margin: 5px;
     padding: 10px;
 }
@@ -101,6 +166,10 @@ p {
     margin-top: 25px;
 }
 
+.violet {
+    color: #6D55D6;
+}
+
 
 #img_programmer {
     width: 500px;
@@ -109,17 +178,35 @@ p {
 
 .flex-wrapper{
     display: flex;
-    margin: 10px;
+    margin: 0px;
+   border-color: black;
+    border-style: solid;
+    border-width: 2px;
+
 }
 
 
-.card {
+.cards {
     flex-grow: 1;
     text-align: center;
     margin: 5px;
     border-color: grey;
     border-style: outset;
     border-width: 2px;
+}
+
+.flex-item {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0px;
+    border-color: grey;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+#flex-item-home{
+    text-align: left;
 }
 
 footer {
@@ -146,9 +233,6 @@ footer {
         flex-direction: column;
     }
 
-    .image {
-        margin-bottom: 20px;
-    }
 }
 
 
