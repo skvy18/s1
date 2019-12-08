@@ -8,23 +8,27 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <style type="text/css">
-
-
-    </style>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $('.menu a').click(function () {
+            $(".menu").collapse('hide');
+        });
+    </script>
 </head>
 
 <body>
-<!--<div class="menu-wrapper">
+<div class="menu-wrapper">
     <input type="checkbox" class="toggler">
-    <div class="hamburger"><div></div></div>
+    <div class="hamburger">
+        <div></div>
+    </div>
     <div class="menu">
         <div>
             <div>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li> <a href="#about">About</a></li>
-                    <li> <a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -32,84 +36,75 @@
         </div>
     </div>
 </div>
-<header class="showcase">
-    <div class="container showcase-inner">
-        <h1>Welcome</h1>
-        <p>Lorem ipsum bla bla bla</p>
-    </div>
-
-</header>-->
-
-
 <div class="grid-wrapper">
-    <div class="menu-wrapper">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger"><div></div></div>
-        <div class="menu">
-            <div>
-                <div>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li> <a href="#about">About</a></li>
-                        <li> <a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-   <!-- <header>
-        <div id="logo"></div>
-        <div id="nav">
-            <ul>
-                <li>home</li>
-                <li>about</li>
-                <li>skills</li>
-                <li>projects</li>
-                <li>contact</li>
-            </ul>
-        </div>
-
-    </header>-->
     <main>
         <div class="child-grid" id="home">
             <div class="flex-wrapper">
-                    <div class="flex-item" id="flex-item-home">
-                        <br>
-                        <br>
-                        <br>
-                        <h1>Hi, I'm Livia</h1>
-                        <h1 class="violet">
-                            Full stack developer
-                        </h1>
-                    </div>
-                    <div class="flex-item">
-                        <img src="images/profil.png" >
-                    </div>
+                <div class="flex-item" id="flex-item-home">
+                    <br>
+                    <br>
+                    <br>
+                    <h1>Hi, I'm Livia Welschinger</h1>
+                    <h1 class="violet">
+                        Full stack developer
+                    </h1>
+                </div>
+                <div class="flex-item">
+                    <img src="images/profil.png">
+                </div>
 
-                </div>
-                <div>
-                </div>
+            </div>
+            <div>
+            </div>
 
         </div>
         <div class="child-grid" id="about">
             <h1>About</h1>
             <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
+                I'm a 22 year old junior software developer from Berlin, Germany. I work at urban ENERGY, a Berlin
+                startup which has the goal to bring eMobility into urban areas.
+            </p>
+            <p>
+                When I was a teenager my interest on technology has been growing more and more. I liked the idea of
+                using technology in order to
+                solve problems and to make the world a little bit better. Therefore I decided to study Business
+                Computing after high school.
+                At the University of Applied Sciences in Berlin I had the chance to get to know not only the field of
+                computer science but also about the business side with courses such as marketing.
+            </p>
+            <p> But my real passion is programming. I love to <span>solve real problems, being creative and to build something
+                new</span>.
             </p>
         </div>
         <div class="child-grid" id="skills">
             <h1>Skills</h1>
+            <p>I come from the back-end side.
+                But I'm also interested in front-end development and to improve my skills continuously. Therefore I'm
+                currently taking the React - The Complete Guide (incl Hooks, React Router, Redux).
+            </p>
+            <br/>
             <div class="flex-wrapper">
-                <div class="cards">
+                <div class="card">
                     <p>Backend</p>
+                    <ul class="circle">
+                        <li>Java</li>
+                        <li>Spring</li>
+                        <li>SQL</li>
+                        <li>NoSQL</li>
+                    </ul>
                 </div>
-                <div  class="cards">
-                    <p>Frontend</p>
+                <div class="card">
+                    <div class="container">
+                        <p>Frontend</p>
+                        <ul class="circle">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>jQuery</li>
+                            <li>Thymeleaf</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -117,14 +112,16 @@
         <div class="child-grid" id="projects">
             <h1>Projects</h1>
             <p>
-                I really enjoy building things and being creative. Have a look on some of my projects I have been working on.
+                I really enjoy building things and being creative. Have a look on some of my projects I have been
+                working on.
 
             </p>
         </div>
         <div class="child-grid" id="contact">
             <h1>Contact</h1>
             <p>
-                If you want to get to know more about me and my work, are interested in a cooperation or have any questions, feel free to contact me.
+                If you want to get to know more about me and my work, are interested in a cooperation or have any
+                questions, feel free to contact me.
             </p>
         </div>
     </main>
@@ -134,17 +131,7 @@
 </div>
 
 
-
-
-
 </body>
-
-
-
-
-
-
-
 
 
 </html>
