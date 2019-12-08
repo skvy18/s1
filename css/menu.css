@@ -116,7 +116,7 @@
 }
 
 .menu-wrapper .menu > div {
-    background: var(--overlay-color);
+    background: white;
     /*
     border-radius: 0%; !* evtl. anpassen *!
     */

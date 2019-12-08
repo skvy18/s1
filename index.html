@@ -3,10 +3,10 @@
 
 <head>
 
-    <meta name="viewport" content="width-device-width, initial-scale =1.0" http-equiv="content-type" charset="utf-8">
+    <meta charset="utf-8" content="width-device-width, initial-scale =1.0" http-equiv="content-type" name="viewport">
     <title>Livia Welschinger</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
@@ -18,7 +18,7 @@
 
 <body>
 <div class="menu-wrapper">
-    <input type="checkbox" class="toggler">
+    <input class="toggler" type="checkbox">
     <div class="hamburger">
         <div></div>
     </div>
@@ -44,9 +44,9 @@
                     <br>
                     <br>
                     <br>
-                    <h1>Hi, I'm Livia Welschinger</h1>
+                    <h1><span>Hi, I'm Livia Welschinger</span></h1>
                     <h1 class="violet">
-                        Full stack developer
+                        <span>Full stack developer</span>
                     </h1>
                 </div>
                 <div class="flex-item">
@@ -59,7 +59,7 @@
 
         </div>
         <div class="child-grid" id="about">
-            <h1>About</h1>
+            <h1><span>About</span></h1>
             <p>
                 I'm a 22 year old junior software developer from Berlin, Germany. I work at urban ENERGY, a Berlin
                 startup which has the goal to bring eMobility into urban areas.
@@ -74,59 +74,85 @@
             </p>
             <p> But my real passion is programming. I love to <span>solve real problems, being creative and to build something
                 new</span>.
+                I document my learning process on <a class="link" href="https://www.instagram.com/liviacodes/?hl=de"
+                                                     target="_blank">Instagram</a> where I share my progress, tips and
+                tricks with over 3000 followers.
             </p>
         </div>
         <div class="child-grid" id="skills">
-            <h1>Skills</h1>
-            <p>I come from the back-end side.
+            <h1><span>Skills</span></h1>
+            <p>I come from the back-end side. I wrote my bachelor thesis about the development of microservices with
+                Spring Boot and Spring Cloud
+                as extension and part of the Java based <a class="link" href="https://spring.io" target="_blank">Spring
+                    framework</a>.
                 But I'm also interested in front-end development and to improve my skills continuously. Therefore I'm
-                currently taking the React - The Complete Guide (incl Hooks, React Router, Redux).
+                currently taking the Udemy course <a class="link"
+                                                     href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
+                                                     target="_blank">React - The Complete Guide (incl Hooks, React
+                    Router, Redux)</a>.
             </p>
             <br/>
             <div class="flex-wrapper">
                 <div class="card">
                     <p>Backend</p>
-                    <ul class="circle">
+                   <!-- <ul class="circle">
                         <li>Java</li>
                         <li>Spring</li>
                         <li>SQL</li>
                         <li>NoSQL</li>
-                    </ul>
+                    </ul>-->
                 </div>
                 <div class="card">
                     <div class="container">
                         <p>Frontend</p>
-                        <ul class="circle">
+                        <!--<ul class="circle">
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>Javascript</li>
                             <li>jQuery</li>
                             <li>Thymeleaf</li>
                             <li>React</li>
-                        </ul>
+                        </ul>-->
                     </div>
                 </div>
             </div>
 
         </div>
         <div class="child-grid" id="projects">
-            <h1>Projects</h1>
+            <h1><span>Projects</span></h1>
             <p>
                 I really enjoy building things and being creative. Have a look on some of my projects I have been
                 working on.
-
             </p>
+            <p>PROJECTS COMING SOON</p>
         </div>
         <div class="child-grid" id="contact">
-            <h1>Contact</h1>
+            <h1><span>Contact</span></h1>
             <p>
                 If you want to get to know more about me and my work, are interested in a cooperation or have any
                 questions, feel free to contact me.
             </p>
+            <button>
+                <div class="button-div"> <div id="contact-div"><a class="button-link" href="mailto:livia-welschinger@t-online.de">Contact me</a></div>
+                    <div id="arrow-div"> <img src="images/arrow.png"></div></div>
+
+            </button>
         </div>
     </main>
     <footer>
-        Footer
+        <div class="flex-wrapper">
+            <div class="flex-item" id="socialmedia-icons">
+                <!-- TODO Credit icons -->
+                <a href="https://github.com/liviawelschinger" target="_blank"><img class="icon" src="images/github.png"></a>
+                <a href="https://www.instagram.com/liviacodes/?hl=de" target="_blank"> <img class="icon"
+                                                                                            src="images/instagram.png"></a>
+                <a href="https://www.linkedin.com/in/livia-welschinger/" target="_blank"><img class="icon"
+                                                                                              src="images/linkedin.png"></a>
+                <a href="https://www.xing.com/profile/Livia_Welschinger/cv" target="_blank"><img class="icon"
+                                                                                                 src="images/xing.png"></a>
+            </div>
+        </div>
+
     </footer>
 </div>
 
