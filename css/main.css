@@ -1,6 +1,5 @@
 :root{
-    --primary-color: rgba(13,110, 139, 0.75);
-    --overlay-color: rgba(24,39, 51, 0.85);
+    --overlay-color: rgba(225,225, 225, 0.85);
     --menu-speed: 0.75s;
 }
 
@@ -66,7 +65,8 @@ showcase .showcase-inner{
 html {
     height: 100%;
     width: 100%;
-    font-family: circular std, sans-serif;
+   /* font-family: circular std, sans-serif; */
+    font-family: railway , sans-serif;
 }
 
 
@@ -112,23 +112,23 @@ header ul {
 }
 
 
-ul,
+/*ul,
 li {
     margin: 0;
     padding: 0;
-}
+}*/
 
-li {
+/*li {
     display: inline-block;
     padding: 10px;
-}
+}*/
 
-.nav {
+/*.nav {
     height: 80px;
     display: flex;
     align-items: center;
     text-align: right;
-}
+}*/
 
 .grid-wrapper {
     /*changed the height from 100% to auto as the layout breaks when the height of the content 'overflows'*/
@@ -179,9 +179,9 @@ p {
 .flex-wrapper{
     display: flex;
     margin: 0px;
-   border-color: black;
+  /* border-color: black;
     border-style: solid;
-    border-width: 2px;
+    border-width: 2px;*/
 
 }
 
@@ -199,9 +199,9 @@ p {
     flex-grow: 1;
     text-align: center;
     margin: 0px;
-    border-color: grey;
+   /* border-color: grey;
     border-style: solid;
-    border-width: 1px;
+    border-width: 1px;*/
 
 }
 
