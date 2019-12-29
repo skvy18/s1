@@ -10,14 +10,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
-        $('.menu a').click(function () {
-            $(".menu").collapse('hide');
-        });
     </script>
 </head>
 
 <body>
-<div class="menu-wrapper">
+<!--<div class="menu-wrapper">
     <input class="toggler" type="checkbox">
     <div class="hamburger">
         <div></div>
@@ -26,31 +23,35 @@
         <div>
             <div>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#"><span>Home</span></a></li>
+                    <li><a href="#about"><span>About</span></a></li>
+                    <li><a href="#skills"><span>Skills</span></a></li>
+                    <li><a href="#projects"><span>Projects</span></a></li>
+                    <li><a href="#contact"><span>Contact</span></a></li>
                 </ul>
             </div>
         </div>
     </div>
-</div>
+</div>-->
 <div class="grid-wrapper">
     <main>
         <div class="child-grid" id="home">
             <div class="flex-wrapper">
-                <div class="flex-item" id="flex-item-home">
-                    <br>
-                    <br>
-                    <br>
-                    <h1><span>Hi, I'm Livia Welschinger</span></h1>
-                    <h1 class="violet">
-                        <span>Full stack developer</span>
-                    </h1>
+                <div class="flex-item">
+                    <div id="text-left">
+                        <br>
+                        <br>
+                        <br>
+                        <h1><span>Hi, I'm Livia Welschinger</span></h1>
+                        <h1 class="violet">
+                            <span>Full stack developer</span>
+                        </h1>
+                    </div>
+
                 </div>
                 <div class="flex-item">
-                    <img src="images/profil.png">
+                    <div><img id="img_profile" src="images/profil.png">
+                    </div>
                 </div>
 
             </div>
@@ -81,42 +82,32 @@
         </div>
         <div class="child-grid" id="skills">
             <h1><span>Skills</span></h1>
-            <p>I come from the back-end side. I wrote my bachelor thesis about the development of microservices with
-                Spring Boot and Spring Cloud
-                as extension and part of the Java based <a class="link" href="https://spring.io" target="_blank">Spring
-                    framework</a>.
+            <p>I come from the back-end side. Working at adesso AG, an international provider of consulting and software
+                services I wrote my bachelor thesis about microservices with Spring Boot and Spring Cloud as extension
+                and part of the Java based <a class="link" href="https://spring.io" target="_blank">Spring Framework</a>.
                 But I'm also interested in front-end development and to improve my skills continuously. Therefore I'm
                 currently taking the Udemy course <a class="link"
                                                      href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
                                                      target="_blank">React - The Complete Guide (incl Hooks, React
                     Router, Redux)</a>.
             </p>
-            <br/>
-            <div class="flex-wrapper">
-                <div class="card">
-                    <p>Backend</p>
-                   <!-- <ul class="circle">
-                        <li>Java</li>
-                        <li>Spring</li>
-                        <li>SQL</li>
-                        <li>NoSQL</li>
-                    </ul>-->
-                </div>
-                <div class="card">
-                    <div class="container">
-                        <p>Frontend</p>
-                        <!--<ul class="circle">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>jQuery</li>
-                            <li>Thymeleaf</li>
-                            <li>React</li>
-                        </ul>-->
-                    </div>
-                </div>
-            </div>
-
+            <p><span>Backend</span></p>
+            <ul>
+                <li>Java</li>
+                <li>Spring</li>
+                <li>SQL</li>
+                <li>NoSQL</li>
+                <li>Docker</li>
+            </ul>
+            <p><span>Frontend</span></p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Thymeleaf</li>
+                    <li>React</li>
+                </ul>
         </div>
         <div class="child-grid" id="projects">
             <h1><span>Projects</span></h1>
@@ -128,15 +119,23 @@
         </div>
         <div class="child-grid" id="contact">
             <h1><span>Contact</span></h1>
-            <p>
-                If you want to get to know more about me and my work, are interested in a cooperation or have any
-                questions, feel free to contact me.
-            </p>
-            <button>
-                <div class="button-div"> <div id="contact-div"><a class="button-link" href="mailto:livia-welschinger@t-online.de">Contact me</a></div>
-                    <div id="arrow-div"> <img src="images/arrow.png"></div></div>
-
-            </button>
+            <div class="flex-wrapper">
+                <div class="flex-item" id="text-left">
+                    <div>
+                        <p>
+                            If you want to get to know more about me and my work, are interested in a cooperation or have
+                            any
+                            questions, feel free to contact me.
+                        </p>
+                        <button id="button">
+                            <a class="button-link" id="contact-link" href="mailto:livia-welschinger@t-online.de">Contact me</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <img id="img_messaging" src="images/undraw_messaging_fun_86y2.png">
+                </div>
+            </div>
         </div>
     </main>
     <footer>
