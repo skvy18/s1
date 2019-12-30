@@ -220,14 +220,6 @@ footer {
 
 }
 
-.contact-grid {
-    height: 380px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    text-align: left;
-    justify-content: center;
-}
-
 .footer-child-grid {
     /*border: 1px black solid;*/
 }
