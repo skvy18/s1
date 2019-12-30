@@ -92,7 +92,6 @@ main {
     display: grid;
     width: 60vw;
     /*border: 1px black solid;*/
-    padding: 10px;
     margin-top: 0px;
     grid-template-columns: 60% 40%;
     text-align: justify;
