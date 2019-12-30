@@ -151,9 +151,6 @@ font-size: 15px;
     text-align: center;
     align-items: center;
     justify-content: center;
-   /* border-color: black;
-    border-style: solid;
-    border-width: 1px;*/
 }
 
 #flex-item-home {
@@ -162,17 +159,11 @@ font-size: 15px;
     text-align: left;
     align-items: center;
     justify-content: center;
-   /* border-color: black;
-    border-style: solid;
-    border-width: 1px;*/
 }
 
 .flex-wrapper-left {
   display: flex;
     margin: 0px;
-  /* border-color: black;
-    border-style: solid;
-    border-width: 2px;*/
 }
 
 
@@ -225,7 +216,16 @@ footer {
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-top: 8vh;
 
+}
+
+.contact-grid {
+    height: 380px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    justify-content: center;
 }
 
 .footer-child-grid {
@@ -249,7 +249,6 @@ button{
     text-decoration: none;
     font-size: 16px;
     margin-top: 25px;
-
 }
 
 
@@ -277,22 +276,16 @@ button:hover > .button-link{
     justify-content: center;
 }
 
-#contact-div{
-    height: 34px;
-    width: 120px;
-
-}
-
-#arrow-div{
-    width: 32px;
-}
-
-
 #img_messaging {
-    width: 345px;
-    height: 250px;
+    width: 265px;
+    height: 200px;
 }
 
+#img_messaging_div {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 
 
 @media only screen and (max-width: 850px) {
@@ -304,21 +297,17 @@ button:hover > .button-link{
 
     footer {
         order: 2;
+        display: flex;
+        flex-direction: column;
     }
-
-    /*end of changes*/
 
     .flex-wrapper {
         flex-direction: column;
     }
 
-    footer {
-     display: flex;
-            flex-direction: column;
-    }
 
     #flex-item-home {
-    text-align: center;
+        text-align: center;
     }
 }
 
