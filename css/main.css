@@ -91,6 +91,11 @@ p {
     margin-top: 25px;
 }
 
+.p-footer {
+font-size: 15px;
+    margin-top: 2px;
+}
+
 .violet {
     color: #6D55D6;
 }
@@ -214,18 +219,23 @@ span {
 footer {
     background-color: lightgray;
     padding: 10px;
-    height: 100px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-child-grid {
+    /*border: 1px black solid;*/
 }
 
 .icon {
     height: 40px;
     width: 40px;
-    margin-left: 15px;
-}
-
-#socialmedia-icons{
-    margin: 20px;
-    padding: 20px;
+    margin-left: 40px;
 }
 
 button{
@@ -299,6 +309,11 @@ button:hover > .button-link{
 
     .flex-wrapper {
         flex-direction: column;
+    }
+
+    footer {
+     display: flex;
+            flex-direction: column;
     }
 
     #flex-item-home {
