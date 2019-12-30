@@ -112,12 +112,13 @@ font-size: 15px;
 }
 .flex-wrapper{
     display: flex;
-    margin: 0px;
   /* border-color: black;
     border-style: solid;
     border-width: 2px;*/
+    text-align: center;
     align-items: center;
    justify-content: center;
+   margin: auto;
 
 }
 
@@ -147,7 +148,7 @@ font-size: 15px;
 
 .flex-item {
     flex-grow: 1;
-    margin: 0px;
+    margin: auto;
     text-align: center;
     align-items: center;
     justify-content: center;
