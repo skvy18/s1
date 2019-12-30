@@ -118,7 +118,6 @@ font-size: 15px;
     text-align: center;
     align-items: center;
    justify-content: center;
-   margin: auto;
 
 }
 
@@ -148,7 +147,6 @@ font-size: 15px;
 
 .flex-item {
     flex-grow: 1;
-    margin: auto;
     text-align: center;
     align-items: center;
     justify-content: center;
