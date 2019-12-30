@@ -281,7 +281,7 @@ button:hover > .button-link{
 }
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 812px) {
     /*changes to code to arrange aside below article. */
     .grid-wrapper {
         display: flex;
