@@ -341,6 +341,10 @@ margin-top: 25px;
     #flex-item-home {
         text-align: center;
     }
+
+    main p {
+    text-align: left;
+    }
 }
 
 
