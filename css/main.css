@@ -349,7 +349,24 @@ margin-top: 25px;
     li {
         display: block;
     }
-}
+
+    .child-grid {
+        width: 80vw;
+    }
+
+
+    .child-grid-home {
+         width: 80vw;
+    }
+
+     .child-grid-contact {
+         width: 80vw;
+    }
+
+
+
+
+
 
 
 
