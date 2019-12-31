@@ -70,7 +70,7 @@ main {
 
 .child-grid {
     display: grid;
-    width: 60vw;
+    width: 80vw;
     /*border: 1px black solid;*/
     padding: 10px;
     text-align: justify;
@@ -78,7 +78,7 @@ main {
 
 .child-grid-home {
     display: grid;
-    width: 60vw;
+    width: 80vw;
     /*border: 1px black solid;*/
     padding: 10px;
     margin-top: 0px;
@@ -90,7 +90,7 @@ main {
 
 .child-grid-contact {
     display: grid;
-    width: 60vw;
+    width: 80vw;
     /*border: 1px black solid;*/
     margin-top: 0px;
     grid-template-columns: 60% 40%;
@@ -349,20 +349,6 @@ margin-top: 25px;
     li {
         display: block;
     }
-
-    .child-grid {
-        width: 80vw;
-    }
-
-
-    .child-grid-home {
-         width: 80vw;
-    }
-
-     .child-grid-contact {
-         width: 80vw;
-    }
-
 
 
 
