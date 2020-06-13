@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* no scroll on x-axis, for bigger images for example */
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+/* mobile styles */
+
+.grid {
+   /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 40px;*/
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    overflow-x: hidden;
+}
+
+/* fonts */
+/* register own font */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Black.ttf');
+}
+
+.home-text {
+    grid-column: 2/8;
+    text-align:center;
+    margin-top: 25px;
+
+}
+
+section {
+    padding-bottom: 50px;
+
+}
+
+
+h3 {
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: #8E74FF;
+}
+
+h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 40px;
+    color: #8E74FF;
+}
+
+
+
+.home-img {
+    align-self: center;
+    grid-column: 2/8;
+}
+
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    /* or 117% */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #8F8F8F;
+}
+
+#home-p {
+    margin-top: 16px;
+}
+
+/*.primary-button {
+    background: #4CBFA4;
+    border-radius: 50px;
+
+    padding: 10px;
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    margin-top: 50px;
+
+    color: #FFFFFF;
+}*/
+
+.primary-button {
+    background: #4CBFA4;
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    margin-top: 25px;
+    position: center;
+    color: #FFFFFF;
+    width: 140px;
+    height: 40px;
+
+}
+
+.section-headline {
+    grid-column: 2/5;
+}
+
+.section-text {
+    grid-column: 2/8;
+    /* or 133% */
+
+    text-align: justify;
+}
+
+.contact-img {
+    align-self: center;
+    grid-column: 3/7;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
