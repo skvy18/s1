@@ -4,23 +4,19 @@
     text-decoration: none;
     /* no scroll on x-axis, for bigger images for example */
     overflow-x: hidden;
-}
-
-h1 {
-    font-size: 16px;
+    box-sizing: border-box;
 }
 
 /* mobile styles */
 
-.grid {
-   /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin: 40px;*/
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 10px;
-    overflow-x: hidden;
+section {
+    padding-bottom: 50px;
+
+}
+
+.section-text {
+    grid-column: 2/8;
+    text-align: justify;
 }
 
 /* fonts */
@@ -30,19 +26,14 @@ h1 {
     src: url('../assets/fonts/Roboto-Black.ttf');
 }
 
-.home-text {
-    grid-column: 2/8;
-    text-align:center;
-    margin-top: 25px;
-
+/* text */
+#contact-headline-underline {
+    width: 86px;
 }
 
-section {
-    padding-bottom: 50px;
-
+h1 {
+    font-size: 16px;
 }
-
-
 h3 {
 
     font-family: Roboto;
@@ -62,11 +53,17 @@ h1 {
     color: #8E74FF;
 }
 
+h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 40px;
+    color: #8E74FF;
+}
 
-
-.home-img {
-    align-self: center;
-    grid-column: 2/8;
+#home-p {
+    margin-top: 16px;
 }
 
 p {
@@ -83,32 +80,32 @@ p {
     color: #8F8F8F;
 }
 
-#home-p {
-    margin-top: 16px;
+#projects-headline-underline {
+    width: 90px;
 }
 
-/*.primary-button {
-    background: #4CBFA4;
-    border-radius: 50px;
+.section-headline-div {
+    height: 36px;
+    grid-column: 2/5;
+    overflow-y: hidden;
+}
 
-    padding: 10px;
-    color: white;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 19px;
-    text-align: center;
-    margin-top: 50px;
+.section-headline-underline {
+    position: relative;
+    width: 105px;
+    height: 6px;
+    background: #9AEDD9;
+    margin-top: -15px;
+    z-index: -1;
+}
 
-    color: #FFFFFF;
-}*/
+/* buttons */
 
 .primary-button {
     background: #4CBFA4;
     border-radius: 50px;
     border: none;
-    padding: 10px;
+    padding: 10px 15px;
     color: white;
     font-family: Roboto;
     font-style: normal;
@@ -117,34 +114,68 @@ p {
     line-height: 19px;
     text-align: center;
     margin-top: 25px;
-    position: center;
     color: #FFFFFF;
     width: 140px;
     height: 40px;
-
 }
 
-.section-headline {
-    grid-column: 2/5;
+.primary-button-centered {
+    position: center;
 }
 
-.section-text {
-    grid-column: 2/8;
-    /* or 133% */
-
-    text-align: justify;
+.primary-button-left {
+    margin-left: 50px;
 }
+
+#projects-button {
+    width: 180px;
+}
+
+/* structure elements */
 
 .contact-img {
     align-self: center;
     grid-column: 3/7;
 }
 
-.nav {
+#home {
+    margin-top: 100px;
+}
+
+.home-img {
+    align-self: center;
+    grid-column: 2/8;
+}
+
+.home-text {
+    grid-column: 2/8;
+    text-align:center;
+    margin-top: 25px;
+
+}
+
+.grid {
+    /* display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 10px;
+     margin: 40px;*/
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    overflow-x: hidden;
+}
+
+.logo {
+    grid-column: 2/6;
+}
+
+nav {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
-    align-items: center;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.05);
+    padding: 10px;
 }

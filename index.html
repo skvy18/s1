@@ -14,7 +14,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav>
+<nav class="grid">
+    <div class="logo">
+        <h3>Livia</h3>
+    </div>
 
 </nav>
 <section id="home" class="grid">
@@ -27,32 +30,51 @@
         <p id="home-p">I solve problems with</p>
         <p>design and code.</p>
         <a href="#about">
-            <button class="primary-button">About me</button>
+            <button class="primary-button primary-button-centered">About me</button>
         </a>
     </div>
 </section>
-<section id="about" class="grid">
-    <h3 class="section-headline">About me</h3>
-    <p class="section-text">
-        I'm a 22 year old junior software developer from Berlin, Germany.
-    <p>
-    <p class="section-text">
-        Studying Business Computing at the University of Applied Sciences in Berlin I had the chance to get to know not
-        only the field of computer science but also about the business side with courses such as marketing.
-    </p>
-    <p class="section-text"> For me, programming is not just a job, it’s my passion. I love to solve real problems,
-        being creative and to build something new. Helping others to become a full stack developer, I document my
-        learning process on Instagram, where I share my progress, tips and tricks with over 4000 followers.
-    </p>
+<section id="about">
+    <div class="grid">
+        <div class="section-headline-div">
+            <h3>About me</h3>
+            <div class="section-headline-underline"></div>
+        </div>
+        <p class="section-text">
+            I'm a 22 year old junior software developer from Berlin, Germany.
+        <p>
+        <p class="section-text">
+            Studying Business Computing at the University of Applied Sciences in Berlin I had the chance to get to know not
+            only the field of computer science but also about the business side with courses such as marketing.
+        </p>
+        <p class="section-text"> For me, programming is not just a job, it’s my passion. I love to solve real problems,
+            being creative and to build something new. Helping others to become a full stack developer, I document my
+            learning process on Instagram, where I share my progress, tips and tricks with over 4000 followers.
+        </p>
+    </div>
+    <a href="#projects">
+        <button class="primary-button primary-button-left" id="projects-button">View my projects</button>
+    </a>
 </section>
-<section id="projects" class="grid">
-    <h3 class="section-headline">Projects</h3>
-    <p class="section-text">
-        I really enjoy building things and being creative. Have a look on some of my projects I have been working on.    <p>
+<section id="projects">
+    <div class="grid">
+        <div class="section-headline-div">
+            <h3>Projects</h3>
+            <div class="section-headline-underline" id="projects-headline-underline"></div>
+        </div>
+        <p class="section-text">
+            I really enjoy building things and being creative. Have a look on some of my projects I have been working on.    <p>
     </p>
+    </div>
+    <a href="#contact">
+        <button class="primary-button primary-button-left">Contact me</button>
+    </a>
 </section>
 <section id="contact" class="grid">
-    <h3 class="section-headline">Contact</h3>
+    <div class="section-headline-div">
+        <h3>Contact</h3>
+        <div class="section-headline-underline" id="contact-headline-underline"></div>
+    </div>
     <div class="contact-img">
         <img src="images/undraw_mail_box_kd5i%201.svg">
     </div>
