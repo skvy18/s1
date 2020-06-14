@@ -131,6 +131,19 @@ p {
     width: 180px;
 }
 
+/* icons */
+
+.icon {
+    height: 32px;
+    width: 32px;
+    margin: 0 20px;
+}
+
+.social-icons {
+    text-align: center;
+    padding: 10px;
+}
+
 /* structure elements */
 
 .contact-img {
