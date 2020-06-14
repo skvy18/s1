@@ -256,6 +256,7 @@ nav {
     width: 100px;
     border-radius: 5%;
     grid-column: 2/4;
+    margin-left: 5px;
 }
 
 #instagram-flowers-laptop {
@@ -265,6 +266,7 @@ nav {
     border-radius: 5%;
     grid-row: 2;
     margin-top: -25px;
+    margin-left: 5px;
 }
 
 #instagram-setup {
