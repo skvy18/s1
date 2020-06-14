@@ -16,7 +16,7 @@ section {
 
 .section-text {
     grid-column: 2/8;
-    text-align: justify;
+    text-align: left;
 }
 
 /* fonts */
@@ -73,8 +73,6 @@ p {
     font-size: 18px;
     line-height: 1.5;
     /* or 117% */
-
-    text-align: center;
     letter-spacing: 0.02em;
 
     color: #8F8F8F;
@@ -101,6 +99,10 @@ p {
 
 /* buttons */
 
+#contact-button {
+    width: 180px;
+}
+
 .primary-button {
     background: #4CBFA4;
     border-radius: 50px;
@@ -118,9 +120,15 @@ p {
     width: 140px;
     height: 40px;
 }
-
 .primary-button-centered {
     position: center;
+}
+
+.primary-button:hover {
+    background: #FFFFFF;
+    color: #4CBFA4;
+    border: 2px solid #4CBFA4;
+
 }
 
 .primary-button-left {
@@ -130,6 +138,7 @@ p {
 #projects-button {
     width: 180px;
 }
+
 
 /* icons */
 
@@ -159,6 +168,7 @@ footer {
     background: #fff;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.05);
     padding: 10px;
+    text-align: center;
 }
 
 #home {
