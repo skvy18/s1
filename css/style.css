@@ -97,6 +97,38 @@ p {
     z-index: -1;
 }
 
+.text-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    /* or 117% */
+    letter-spacing: 0.02em;
+    color: #8E74FF;
+    transition: color 0.4s ease;
+    position: relative;
+}
+
+.text-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    /* The scaleX() CSS function defines a transformation that resizes an element along the x-axis (horizontally). */
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #9AEDD9;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.text-link:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 /* buttons */
 
 #contact-button {
@@ -145,7 +177,7 @@ p {
 .icon {
     height: 32px;
     width: 32px;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 .social-icons {
@@ -187,11 +219,8 @@ footer {
 
 }
 
+
 .grid {
-    /* display: grid;
-     grid-template-columns: repeat(4, 1fr);
-     gap: 10px;
-     margin: 40px;*/
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 10px;
@@ -212,3 +241,61 @@ nav {
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.05);
     padding: 10px;
 }
+
+#instagram-images {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    overflow-x: hidden;
+    margin-top: 25px;
+
+}
+
+#instagram-sunset-img {
+    height: 100px;^
+    width: 100px;
+    border-radius: 5%;
+    grid-column: 2/4;
+}
+
+#instagram-flowers-laptop {
+    height: 100px;
+    width: 80px;
+    grid-column: 2/4;
+    border-radius: 5%;
+    grid-row: 2;
+    margin-top: -25px;
+}
+
+#instagram-setup {
+    height: 100px;
+    width: 80px;
+    grid-column: 4/5;
+    border-radius: 5%;
+    grid-row: 2;
+    margin-left: 20px;
+
+
+}
+
+#instagram-smartphone-img {
+    height: 100px;
+    width: 80px;
+    grid-column: 5/8;
+    border-radius: 5%;
+    grid-row: 2;
+    margin-left: 20px;
+
+
+}
+
+#instagram-desk-img {
+
+    height: 140px;
+    width: 140px;
+    grid-column: 4/8;
+    margin-left: 50px;
+    border-radius: 5%;
+
+}
+
