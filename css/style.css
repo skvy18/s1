@@ -275,7 +275,7 @@ nav {
     grid-column: 4/5;
     border-radius: 5%;
     grid-row: 2;
-    margin-left: 20px;
+    margin-left: 30px;
 
 
 }
@@ -286,7 +286,7 @@ nav {
     grid-column: 5/8;
     border-radius: 5%;
     grid-row: 2;
-    margin-left: 20px;
+    margin-left: 10px;
 
 
 }
@@ -301,3 +301,9 @@ nav {
 
 }
 
+.project {
+    height: 200px;
+    background-color: grey;
+    grid-column: 2/8;
+    margin-bottom: 25px;
+}
