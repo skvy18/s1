@@ -118,9 +118,18 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
 <script>
-    new TypeIt('#type-text', {
-        strings: "Full stack developer"
-    }).go();
+    new TypeIt("#type-text", {
+        speed: 60
+    })
+        .type("Full stack developer", {speed: 60})
+        .pause(1000)
+        .delete(null, {deletionSpeed: 80})
+        .type("Creative mind", {speed: 60})
+        .pause(1000)
+        .delete(null, {deletionSpeed: 80})
+        .type("Digital content creator", {speed: 60})
+        .go();
+
 </script>
 </body>
 
