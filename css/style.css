@@ -10,7 +10,7 @@
 /* mobile styles */
 
 section {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
 }
 
@@ -204,19 +204,23 @@ footer {
 }
 
 #home {
-    margin-top: 100px;
+    margin-top: 20vh;
+    min-height: 80vh;
+    margin-bottom: 0;
+
 }
 
-.home-img {
-    align-self: center;
+#home-img {
     grid-column: 2/8;
+    margin-bottom: 8vh;
+    margin-left: 4vw;
+
+
 }
 
 .home-text {
     grid-column: 2/8;
-    text-align:center;
-    margin-top: 25px;
-
+    text-align:left;
 }
 
 
