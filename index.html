@@ -23,7 +23,8 @@
 <section id="home" class="grid">
     <div class="home-text">
         <h3>Hi I'm Livia Welschinger</h3>
-        <h1>Full stack developer</h1>
+<!--        <h1>Full stack developer</h1>-->
+        <h1 id="type-text"></h1>
         <p id="home-p">I solve problems with</p>
         <p>design and code.</p>
         <a href="#about">
@@ -74,9 +75,9 @@
         <p class="section-text">
             I really enjoy building things and being creative. Have a look on some of my projects I have been working on.    <p>
     </p>
+    <!--    <div class="project"></div>
         <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
+        <div class="project"></div>-->
     </div>
     <a href="#contact">
         <button class="primary-button primary-button-left">Contact me</button>
@@ -115,6 +116,12 @@
     </div>
 
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+<script>
+    new TypeIt('#type-text', {
+        strings: "Full stack developer"
+    }).go();
+</script>
 </body>
 
 
