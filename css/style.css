@@ -47,7 +47,7 @@ h1 {
     font-weight: 900;
     font-size: 30px;
     line-height: 40px;
-    color: #4CBFA4;
+    color: #8E74FF;
 }
 
 h2 {
@@ -211,8 +211,6 @@ footer {
     grid-column: 2/8;
     margin-bottom: 8vh;
     margin-left: 4vw;
-
-
 }
 
 .home-text {
@@ -277,8 +275,6 @@ nav {
     border-radius: 5%;
     grid-row: 2;
     margin-left: 30px;
-
-
 }
 
 #instagram-smartphone-img {
@@ -307,4 +303,74 @@ nav {
     background-color: grey;
     grid-column: 2/8;
     margin-bottom: 25px;
+}
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+    #home-img {
+        grid-column: 2/8;
+        margin-left: 2vw;
+        width: 450px;
+        height: 292px;
+    }
+
+    section {
+        margin-bottom: 10vh;
+    }
+
+    .primary-button-left {
+        margin-left: 80px;
+    }
+
+    .contact-img {
+        text-align: center;
+    }
+
+    #instagram-sunset-img {
+        height: 200px;^
+         width: 200px;
+        border-radius: 5%;
+        grid-column: 2/4;
+        margin: 25px auto;
+    }
+
+    #instagram-desk-img {
+        height: 200px;
+        width: 200px;
+        grid-column: 5/8;
+        border-radius: 5%;
+        margin: 25px auto;
+
+
+    }
+
+    #instagram-flowers-laptop {
+        height: 150px;
+        width: 130px;
+        grid-column: 2/4;
+        border-radius: 5%;
+        grid-row: 2;
+        margin: 25px auto;
+
+
+    }
+
+    #instagram-setup {
+        height: 150px;
+        width: 130px;
+        grid-column: 4/6;
+        margin: 25px auto;
+
+    }
+
+    #instagram-smartphone-img {
+        height: 150px;
+        width: 130px;
+        grid-column: 6/8;
+        margin: 25px auto;
+
+
+
+    }
+
 }
