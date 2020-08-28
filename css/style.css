@@ -161,7 +161,7 @@ p {
 }
 
 .primary-button-left {
-    margin-left: 50px;
+    margin-left: 10vw;
 }
 
 #projects-button {
@@ -203,8 +203,6 @@ footer {
 #home {
     margin-top: 20vh;
     min-height: 80vh;
-    margin-bottom: 0;
-
 }
 
 #home-img {
@@ -241,67 +239,30 @@ nav {
     padding: 10px;
 }
 
-#instagram-images {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 10px;
-    overflow-x: hidden;
-    margin-top: 25px;
-
+.row {
+    display: flex;
+    flex-wrap: wrap; /* flex items will wrap onto multiple lines, from top to bottom.*/
+    text-align: center;
+    justify-content: center;
+    padding: 12%;
 }
 
-#instagram-sunset-img {
-    height: 100px;^
-    width: 100px;
-    border-radius: 5%;
-    grid-column: 2/4;
-    margin-left: 5px;
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 5px;
 }
 
-#instagram-flowers-laptop {
-    height: 100px;
-    width: 80px;
-    grid-column: 2/4;
-    border-radius: 5%;
-    grid-row: 2;
-    margin-top: -25px;
-    margin-left: 5px;
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
 
-#instagram-setup {
-    height: 100px;
-    width: 80px;
-    grid-column: 4/5;
-    border-radius: 5%;
-    grid-row: 2;
-    margin-left: 30px;
-}
-
-#instagram-smartphone-img {
-    height: 100px;
-    width: 80px;
-    grid-column: 5/8;
-    border-radius: 5%;
-    grid-row: 2;
-    margin-left: 10px;
-
-
-}
-
-#instagram-desk-img {
-
-    height: 140px;
-    width: 140px;
-    grid-column: 4/8;
-    margin-left: 50px;
-    border-radius: 5%;
-
-}
 
 .project {
     height: 200px;
     background-color: grey;
-    grid-column: 2/8;
     margin-bottom: 25px;
 }
 
@@ -319,7 +280,7 @@ nav {
     }
 
     .primary-button-left {
-        margin-left: 80px;
+        margin-left: 12vw;
     }
 
     .contact-img {
@@ -368,9 +329,60 @@ nav {
         width: 130px;
         grid-column: 6/8;
         margin: 25px auto;
+    }
 
+    .section-headline-underline {
+        width: 80px;
+    }
 
+    /* large tablets & laptop styles */
+    @media screen and (min-width: 960px)  {
+
+        h3 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p, .text-link{
+            font-size: 22px;
+        }
+
+        #home-img {
+            grid-column: 3/5;
+            margin: 10vh auto;
+        }
 
     }
+
+
+    /* desktop styles */
+    @media screen and (min-width: 1200px) {
+        .section-headline-underline {
+            width: 135px;
+        }
+
+        #projects-headline-underline {
+            width: 118px;
+        }
+
+        #contact-headline-underline {
+            width: 112px;
+
+        }
+
+        .row {
+            padding: 10% 12%;
+        }
+
+        #instagram-img {
+            height: 50%;
+            width: 50%;
+        }
+    }
+
 
 }
