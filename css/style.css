@@ -378,9 +378,30 @@ nav {
             padding: 10% 12%;
         }
 
-        #instagram-img {
-            height: 50%;
-            width: 50%;
+        img {
+            margin-bottom: 20px;
+        }
+
+
+        #setup-img {
+            height: 500px;
+            width: 500px;
+        }
+
+        #desk-img {
+            height: 488px;
+            width: 600px;
+            margin-top: 100px;
+        }
+
+        #flowers-img {
+            height: 624px;
+            width: 500px;
+        }
+
+        #smartphone-img {
+            height: 709px;
+            width: 600px;
         }
     }
 
