@@ -356,6 +356,17 @@ nav {
             margin: 10vh auto;
         }
 
+        .section-headline-underline {
+            position: relative;
+            width: 105px;
+            height: 6px;
+            background: #9AEDD9;
+            margin-top: -15px;
+            z-index: -1;
+            visibility:visible;
+
+        }
+
     }
 
 
@@ -380,6 +391,18 @@ nav {
 
         img {
             margin-bottom: 20px;
+        }
+
+        .home-text {
+            grid-column: 2/4;
+            margin-top: 20vh;
+        }
+
+        #home-img {
+            height: 150%;
+            width: 150%;
+            grid-column: 5/7;
+            margin-top: -25vh;
         }
 
 
