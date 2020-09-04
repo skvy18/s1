@@ -14,6 +14,10 @@ section {
 
 }
 
+#home {
+    margin-bottom: 0px;
+}
+
 .section-text {
     grid-column: 2/8;
     text-align: left;
