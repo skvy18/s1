@@ -69,9 +69,7 @@ p {
     font-weight: normal;
     font-size: 18px;
     line-height: 1.5;
-    /* or 117% */
     letter-spacing: 0.02em;
-
     color: #8F8F8F;
 }
 
@@ -129,7 +127,8 @@ p {
 /* buttons */
 
 #contact-button {
-    width: 180px;
+    grid-row: 3;
+    grid-column: 2/8;
 }
 
 .primary-button {
@@ -184,7 +183,7 @@ p {
 
 /* structure elements */
 
-.contact-img {
+#contact-img {
     align-self: center;
     grid-column: 3/7;
 }
@@ -205,10 +204,12 @@ footer {
     min-height: 80vh;
 }
 
-#home-img {
+#home-img-div {
+    grid-row: 2;
     grid-column: 2/8;
-    margin-bottom: 8vh;
-    margin-left: 4vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-text {
@@ -216,6 +217,13 @@ footer {
     text-align:left;
 }
 
+#contact-img-div {
+    grid-column: 2/8;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
 
 .grid {
     display: grid;
@@ -266,11 +274,14 @@ nav {
     margin-bottom: 25px;
 }
 
+
+#message-button {
+    grid-row: 2;
+}
 /* small tablet styles */
 @media screen and (min-width: 620px) {
-    #home-img {
-        grid-column: 2/8;
-        margin-left: 2vw;
+    #home-img-div {
+        grid-column: 3/6;
         width: 450px;
         height: 292px;
     }
@@ -283,7 +294,13 @@ nav {
         margin-left: 12vw;
     }
 
-    .contact-img {
+
+    #home-img {
+        height: 250px;
+        width: 386px;
+    }
+
+    #contact-img {
         text-align: center;
     }
 
@@ -351,7 +368,7 @@ nav {
             font-size: 22px;
         }
 
-        #home-img {
+        #home-img-div {
             grid-column: 3/5;
             margin: 10vh auto;
         }
@@ -398,11 +415,16 @@ nav {
             margin-top: 20vh;
         }
 
-        #home-img {
+        #home-img-div {
             height: 150%;
             width: 150%;
             grid-column: 5/7;
             margin-top: -25vh;
+        }
+
+        #contact-img {
+            align-self: center;
+            grid-column: 5/8;
         }
 
 
@@ -425,6 +447,10 @@ nav {
         #smartphone-img {
             height: 709px;
             width: 600px;
+        }
+
+        .section-text {
+            grid-column: 2/6;
         }
     }
 
