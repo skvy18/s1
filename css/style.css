@@ -19,6 +19,7 @@ section {
 }
 
 .section-text {
+    grid-row: 2;
     grid-column: 2/8;
     text-align: left;
 }
@@ -83,8 +84,8 @@ p {
 
 .section-headline-div {
     height: 36px;
+    grid-row: 1;
     grid-column: 2/5;
-    overflow-y: hidden;
 }
 
 .section-headline-underline {
@@ -130,46 +131,31 @@ p {
 
 /* buttons */
 
-#contact-button {
-    grid-row: 3;
-    grid-column: 2/8;
-}
 
 .primary-button {
-    background: #4CBFA4;
-    border-radius: 50px;
-    border: none;
-    padding: 10px 15px;
-    color: white;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 19px;
     text-align: center;
-    margin-top: 25px;
+    background: #4CBFA4;
+    border: none;
     color: #FFFFFF;
-    width: 140px;
-    height: 40px;
-}
-.primary-button-centered {
-    position: center;
+    padding: 12px 25px;
+    border-radius: 50px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0 0.6);
+    display: inline-block;
 }
 
 .primary-button:hover {
     background: #FFFFFF;
     color: #4CBFA4;
-    border: 2px solid #4CBFA4;
+    border: 1px solid #4CBFA4;
 
 }
 
-.primary-button-left {
-    margin-left: 13vw;
-}
 
-#projects-button {
-    width: 180px;
-}
 
 
 /* icons */
@@ -219,6 +205,10 @@ footer {
 .home-text {
     grid-column: 2/8;
     text-align:left;
+}
+
+.home-text a {
+    margin: 20px 0; /* 20px top and bottom, 0 left and right */
 }
 
 #contact-img-div {
@@ -279,9 +269,7 @@ nav {
 }
 
 
-#message-button {
-    grid-row: 2;
-}
+
 /* small tablet styles */
 @media screen and (min-width: 620px) {
     #home-img-div {
@@ -293,11 +281,6 @@ nav {
     section {
         margin-bottom: 10vh;
     }
-
-    .primary-button-left {
-        margin-left: 12vw;
-    }
-
 
     #home-img {
         height: 250px;
