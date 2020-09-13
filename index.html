@@ -18,15 +18,18 @@
     <div class="logo">
         <h3>Livia</h3>
     </div>
-
 </nav>
 <section id="home" class="grid">
     <div class="home-text">
         <h3>Hi I'm Livia Welschinger</h3>
-<!--        <h1>Full stack developer</h1>-->
+        <!--        <h1>Full stack developer</h1>-->
         <h1 id="type-text"></h1>
-        <p id="home-p">I solve problems with design and code</p>
-        <a href="#about" class="primary-button">Get to know me</a>
+        <p id="home-p">I solve problems with design and code, put together in a creative solution.</p>
+        <div class="button-group">
+            <a href="#about" class="primary-button">Get to know me</a>
+            <a href="#contact" class="secondary-button">Contact me</a>
+        </div>
+
     </div>
     <div id="home-img-div">
         <img src="images/Landing%20page%20illustration.svg" id="home-img">
@@ -38,31 +41,34 @@
             <h3>About me</h3>
             <div class="section-headline-underline"></div>
         </div>
-       <!-- <div>
-            <img src="images/profil.jpg">
-        </div>-->
-        <div class="section-text">
+        <div id="profile-img-div">
+             <img src="images/profil.jpg" id="profile-img"/>
+         </div>
+        <div class="section-text" id="section-text-about">
             <p>
                 I'm a 23 year old software developer from Berlin, Germany.
-                Studying Business Computing at the University of Applied Sciences in Berlin I had the chance to get to know not
+                Studying Business Computing at the University of Applied Sciences in Berlin I had the chance to get to
+                know not
                 only the field of computer science but also about the business side with courses such as marketing.
                 For me, programming is not just a job, it’s my passion. I love to solve real problems,
-                being creative and to build something new. Helping others to become a full stack developer, I document my
-                learning process on <a href="https://www.instagram.com/liviacodes/" target="_blank" class="text-link">Instagram</a>, where I share my progress, tips and tricks with over 4000 followers.
+                being creative and to build something new. Helping others to become a full stack developer, I document
+                my
+                learning process on <a href="https://www.instagram.com/liviacodes/" target="_blank" class="text-link">Instagram</a>,
+                where I share my progress, tips and tricks with over 4000 followers.
             </p>
 
         </div>
     </div>
-   <div class="row">
-       <div class="column">
-           <a><img src="images/instagram-setup.JPG" id="setup-img"></a>
-           <a><img src="images/instagram-flowers-laptop.JPG" id="flowers-img"></a>
-       </div>
-      <div class="column">
-          <a><img src="images/instagram-desk.jpg" id="desk-img"></a>
-          <a><img src="images/instagram-smartphone.JPG" id="smartphone-img"></a>
-      </div>
-   </div>
+    <div class="row">
+        <div class="column">
+            <a><img src="images/instagram-setup.JPG" id="setup-img"></a>
+            <a><img src="images/instagram-flowers-laptop.JPG" id="flowers-img"></a>
+        </div>
+        <div class="column">
+            <a><img src="images/instagram-desk.jpg" id="desk-img"></a>
+            <a><img src="images/instagram-smartphone.JPG" id="smartphone-img"></a>
+        </div>
+    </div>
 </section>
 <section id="projects">
     <div class="grid">
@@ -72,8 +78,9 @@
         </div>
         <div class="section-text">
             <p>
-                I really enjoy building things and being creative. Have a look on some of my projects I have been working on.
-        </p>
+                I really enjoy building things and being creative. Have a look on some of my projects I have been
+                working on.
+            </p>
         </div>
     </div>
 </section>
@@ -85,7 +92,8 @@
         </div>
         <div class="section-text">
             <p>
-                If you want to get to know more about me and my work, are interested in a cooperation or have any questions, feel free to contact me.
+                If you want to get to know more about me and my work, are interested in a cooperation or have any
+                questions, feel free to contact me.
             </p>
         </div>
     </div>
@@ -97,7 +105,7 @@
     </div>
     <div class="social-icons">
         <a href="https://github.com/liviawelschinger" target="_blank"><img class="icon"
-                                                                            src="images/github.png"></a>
+                                                                           src="images/github.png"></a>
         <a href="https://www.instagram.com/liviacodes/?hl=de" target="_blank"> <img class="icon"
                                                                                     src="images/instagram.png"></a>
         <a href="https://www.linkedin.com/in/livia-welschinger/" target="_blank"><img class="icon"
@@ -118,7 +126,7 @@
         .type("Creative mind", {speed: 60})
         .pause(1000)
         .delete(null, {deletionSpeed: 80})
-        .type("Digital content creator", {speed: 60})
+        .type("Content creator", {speed: 60})
         .go();
 
 </script>
