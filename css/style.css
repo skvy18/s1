@@ -243,6 +243,11 @@ footer {
     align-items: center;
 }
 
+#home-img {
+    width: 100%;
+    height: 100%;
+}
+
 #contact-img-div {
     grid-row: 2;
     grid-column: 2/8;
@@ -308,20 +313,12 @@ nav {
 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
-    #home-img-div {
-        grid-column: 3/6;
-        width: 450px;
-        height: 292px;
-    }
 
     section {
         padding-bottom: 100px;
     }
 
-    #home-img {
-        height: 250px;
-        width: 386px;
-    }
+
 
     #instagram-sunset-img {
         height: 200px;^
@@ -405,11 +402,6 @@ nav {
             font-size: 22px;
         }
 
-        #home-img-div {
-            grid-column: 3/5;
-            margin: 10vh auto;
-        }
-
     }
 
 
@@ -442,10 +434,10 @@ nav {
         }
 
         #home-img-div {
-            height: 150%;
-            width: 150%;
-            grid-column: 5/7;
-            margin-top: -25vh;
+            height: 135%;
+            width: 135%;
+            grid-column: 4/7;
+            margin-top: -38vh;
         }
 
 
