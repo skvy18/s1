@@ -376,6 +376,7 @@ nav {
     }
 
     #profile-img-div {
+        grid-column: 5/8;
         margin: 0;
     }
 
