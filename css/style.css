@@ -101,7 +101,7 @@ p {
 
 
 .section-headline-div {
-    height: 36px;
+    height: 40px;
     grid-row: 1;
     grid-column: 2/5;
 }
@@ -392,9 +392,13 @@ nav {
     /* large tablets & laptop styles */
     @media screen and (min-width: 960px)  {
 
+        .section-headline-div {
+            height: 40px;
+        }
+
+
         h3 {
             font-size: 30px;
-            margin-bottom: 15px;
         }
 
         h1 {
