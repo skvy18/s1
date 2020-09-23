@@ -238,8 +238,9 @@ footer {
 }
 
 #home {
-    margin-top: 18vh;
-    min-height: 90vh;
+
+    margin-top: 20vh;
+   min-height: 80vh;
 }
 
 #home-img-div {
