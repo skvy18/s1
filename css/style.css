@@ -546,6 +546,10 @@ nav {
             grid-column: 2/3;
         }
 
+        .section-headline-div {
+            height: 60px;
+        }
+
     }
 
 
