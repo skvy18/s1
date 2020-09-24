@@ -23,10 +23,10 @@
 }
 
 #contact-img-div {
+    grid-row: 4;
     grid-column: 2/8;
     text-align: center;
     justify-content: center;
-    grid-row: 3;
     margin-top: 25px;
 }
 
@@ -159,29 +159,40 @@ p {
 /* buttons */
 
 .button-group {
-    /*text-align: center;*/
+    margin-top: 25px;
     display: grid;
     /*grid-template-columns: repeat(2, 1fr);*/
     grid-gap: 0.5em;
 }
 
+#button-div {
+    grid-row: 3;
+    grid-column: 2/8;
+    margin-top: 25px;
+    display: grid;
+    /*grid-template-columns: repeat(2, 1fr);*/
+    grid-gap: 0.5em;
+
+}
+
 /* TODO Create class button */
 
-
-.primary-button {
-    margin-top: 25px;
+.button {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    background: #4CBFA4;
-    border: 1px solid transparent;
-    color: #FFFFFF;
     padding: 10px 20px 10px 20px;
     width: 100%;
     border-radius: 10px;
+}
+
+.primary-button {
+    background: #4CBFA4;
+    border: 1px solid transparent;
+    color: #FFFFFF;
 }
 
 .primary-button:hover {
@@ -193,19 +204,9 @@ p {
 
 
 .secondary-button {
-    width: 100%;
-    margin-top: 10px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
     background: #FFFFFF;
     border: 1px solid #4CBFA4;
     color: #4CBFA4;
-    padding: 10px 34px 10px 34px;
-    border-radius: 10px;
 }
 
 .secondary-button:hover {
@@ -388,9 +389,13 @@ nav {
     }
 
     #contact-img-div {
-        grid-row: 2;
+        grid-row: 4;
         grid-column: 5/8;
         margin: 0;
+    }
+    #button-div {
+        grid-column: 2/5;
+
     }
 
     .button-group {
@@ -467,7 +472,7 @@ nav {
         }
 
         .home-text {
-            grid-column: 2/4;
+            grid-column: 2/5;
             margin-top: 20vh;
         }
 
@@ -502,6 +507,10 @@ nav {
 
         .section-text {
             grid-column: 2/6;
+        }
+
+        #button-div {
+            grid-column: 2/3;
         }
 
     }
