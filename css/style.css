@@ -248,10 +248,6 @@ header {
 }
 
 #home {
-
-    /*
-    margin-top: 20vh;
-    */
    min-height: 80vh;
 }
 
@@ -322,8 +318,33 @@ nav {
     margin-bottom: 25px;
 }
 
+
+/* small tablet styles */
+@media screen and (min-width: 375px) {
+
+    header {
+        margin-top: 125px;
+    }
+
+   /* #home {
+        min-height: 70vh;
+    }
+
+    #about {
+        padding-top: 38% ;
+    }*/
+
+    #home-img-div {
+        margin-top: -150px;
+    }
+}
+
 /* small tablet styles */
 @media screen and (min-width: 620px) {
+
+    header {
+        margin-top: 225px;
+    }
 
     h3 {
         font-size: 30px;
@@ -345,8 +366,15 @@ nav {
         font-size: 18px;
     }
 
+    #about {
+        padding-top: 15%;
+        padding-bottom: 5%;
+
+    }
+
     section {
-        padding-bottom: 100px;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
 
 
@@ -514,7 +542,6 @@ nav {
 
         .home-text {
             grid-column: 2/5;
-            margin-top: 20vh;
         }
 
         #home-img-div {
