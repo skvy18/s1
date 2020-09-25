@@ -64,7 +64,7 @@ h3 {
     font-style: normal;
     font-weight: 900;
     font-size: 22px;
-    line-height: 40px;
+    line-height: 30px;
     color: #8E74FF;
     grid-row: 1;
 }
@@ -74,7 +74,7 @@ h1 {
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
-    line-height: 30px;
+    line-height: 45px;
     color: #8E74FF;
 }
 
@@ -111,7 +111,7 @@ p {
 .section-headline-underline {
     height: 6px;
     background: #9AEDD9;
-    margin-top: -15px;
+    margin-top: -10px;
     z-index: -1;
 }
 
