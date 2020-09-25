@@ -32,7 +32,9 @@
 
 
 section {
-    padding-bottom: 100px;
+    /* Work with padding to ensure to link so the start of a section on button click */
+    padding-top: 20%;
+    padding-bottom: 20%;
 
 }
 
@@ -240,10 +242,16 @@ footer {
     padding: 10px;
     text-align: center;
 }
+header {
+    margin-top: 100px;
+    height: 100%;
+}
 
 #home {
 
+    /*
     margin-top: 20vh;
+    */
    min-height: 80vh;
 }
 
