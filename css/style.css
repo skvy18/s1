@@ -525,6 +525,10 @@ nav {
     /* desktop styles */
     @media screen and (min-width: 1200px) {
 
+        header {
+            margin-top: 20px;
+        }
+
         h3 {
             font-size: 40px;
             line-height: 60px;
@@ -538,17 +542,21 @@ nav {
         }
 
         .section-headline-underline {
-            width: 135px;
+            margin-top: -20px;
         }
 
-        #projects-headline-underline {
-            width: 118px;
+        #section-headline-underline-about{
+            width: 180px;
         }
 
-        #contact-headline-underline {
-            width: 112px;
-
+        #section-headline-underline-projects,  #section-headline-underline-contact {
+            width: 215px;
         }
+
+
+
+
+
 
         .row {
             padding: 10% 12%;
@@ -559,16 +567,21 @@ nav {
         }
 
         #home-text {
-            grid-column: 2/5;
+            grid-column: 2/4;
         }
 
         #home-img-div {
-            height: 135%;
-            width: 135%;
-            grid-column: 4/7;
-            margin-top: -38vh;
+            grid-row: 2;
+           /* height: 100%;
+            width: 100%;*/
+            grid-column: 5/8;
+            margin-top: -380px;
         }
 
+        #home-img {
+            width: 100%;
+            height: auto;
+        }
 
         #setup-img {
             height: 500px;
