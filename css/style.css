@@ -465,6 +465,23 @@ nav {
         grid-row: 3;
 
     }
+
+    .section-headline-underline {
+        margin-top: -12px;
+    }
+
+    #section-headline-underline-about {
+        width: 135px;
+    }
+
+    #section-headline-underline-projects {
+        width: 160px;
+    }
+
+    #section-headline-underline-contact {
+        width: 160px;
+    }
+
     /* large tablets & laptop styles */
     @media screen and (min-width: 960px)  {
 
