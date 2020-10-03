@@ -33,13 +33,10 @@
 
 section {
     /* Work with padding to ensure to link so the start of a section on button click */
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 20%;
+    padding-bottom: 5%;
 
 }
-
-
-
 
 
 .section-text {
