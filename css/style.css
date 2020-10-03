@@ -482,6 +482,11 @@ nav {
         width: 160px;
     }
 
+    section {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+
     /* large tablets & laptop styles */
     @media screen and (min-width: 960px)  {
 
