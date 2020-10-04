@@ -394,7 +394,7 @@ nav {
     }
 
     #about {
-        padding-top: 15%;
+        padding-top: 12%;
         padding-bottom: 5%;
 
     }
@@ -529,6 +529,10 @@ nav {
 
     section {
         padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    #contact {
         padding-bottom: 10%;
     }
 
@@ -566,6 +570,15 @@ nav {
 
         .icon {
             margin: 0 32px;
+        }
+
+        section {
+            padding-bottom: 5%;
+        }
+
+        #contact {
+            padding-bottom: 10%;
+
         }
 
 
