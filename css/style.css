@@ -220,15 +220,18 @@ p {
 
 /* icons */
 
+
+
+.social-icons {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;}
+
 .icon {
     height: 32px;
     width: 32px;
-    margin: 0 15px;
-}
-
-.social-icons {
-    text-align: center;
-    padding: 10px;
+    margin: 0 20px;
 }
 
 /* structure elements */
@@ -242,6 +245,8 @@ footer {
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.05);
     padding: 10px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -527,6 +532,11 @@ nav {
             width: 377px;
         }
 
+        .icon {
+            margin: 0 32px;
+        }
+
+
     }
 
 
@@ -638,6 +648,19 @@ nav {
         #button-div {
             width: 200px;
         }
+
+        footer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .icon {
+            height: 32px;
+            width: 32px;
+            margin: 0 50px;
+        }
+
+
 
     }
 
