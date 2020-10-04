@@ -91,17 +91,34 @@ h2 {
 }
 
 #home-p {
-    margin-top: 16px;
+    margin-top: 10px;
 }
 
-p {
+p, ul {
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.02em;
     color: #6D6D6D;
+}
+
+ul {
+    width: auto;
+    list-style: none;
+    color: #5D5D5D;
+    margin: 0;
+    /* removes white space of list items to the left side */
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 10px 10px 10px 0px;
+}
+
+
+li::before {content: "•"; color: #6D55D6; display: inline-block; width: 1em;
 }
 
 
@@ -121,6 +138,10 @@ p {
 #section-headline-underline-about {
     width: 100px;
  }
+
+#section-headline-underline-skills {
+    width: 90px;
+}
 
 #section-headline-underline-projects {
     width: 120px;
@@ -336,6 +357,13 @@ nav {
 }
 
 
+#skills-lists {
+    grid-row: 3;
+}
+.skill-headline {
+    color: #8E74FF;
+}
+
 
 
 /* small tablet styles */
@@ -357,7 +385,7 @@ nav {
 
     }
 
-    p {
+    p, ul {
         font-size: 18px;
     }
 
@@ -487,6 +515,10 @@ nav {
         width: 135px;
     }
 
+    #section-headline-underline-skills {
+        width: 122px;
+    }
+
     #section-headline-underline-projects {
         width: 160px;
     }
@@ -516,7 +548,7 @@ nav {
             font-size: 40px;
         }
 
-        p, .text-link{
+        p, ul, .text-link{
             font-size: 22px;
         }
         #profile-img-div {
@@ -569,6 +601,10 @@ nav {
 
         #section-headline-underline-projects,  #section-headline-underline-contact {
             width: 215px;
+        }
+
+        #section-headline-underline-skills {
+            width: 160px;
         }
 
 
@@ -658,6 +694,10 @@ nav {
             height: 32px;
             width: 32px;
             margin: 0 50px;
+        }
+
+        #skills-lists {
+            grid-column: 2/6;
         }
 
 
