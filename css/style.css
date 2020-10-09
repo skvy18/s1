@@ -128,7 +128,7 @@ li::before {content: "•"; color: #6D55D6; display: inline-block; width: 1em;
 .section-headline-div {
     height: 42px;
     grid-row: 1;
-    grid-column: 2/7;
+    grid-column: 2/8;
 }
 
 .section-headline-underline {
