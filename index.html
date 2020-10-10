@@ -12,6 +12,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/menu.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <nav class="grid">
@@ -44,7 +45,9 @@
                 <div class="section-headline-underline" id="section-headline-underline-about"></div>
 -->
             </div>
-            <div id="profile-img-div">
+            <div id="profile-img-div" data-aos="fade-left"
+
+            >
                 <img src="assets/images/profil.jpg" id="profile-img"/>
             </div>
             <div class="section-text" id="section-text-about">
@@ -64,12 +67,12 @@
         </div>
         <div class="row">
             <div class="column">
-                <a><img src="assets/images/instagram-setup.JPG" id="setup-img"></a>
-                <a><img src="assets/images/instagram-flowers-laptop.JPG" id="flowers-img"></a>
+                <a><img src="assets/images/instagram-setup.JPG" id="setup-img" data-aos="fade-right"></a>
+                <a><img src="assets/images/instagram-flowers-laptop.JPG" id="flowers-img" data-aos="fade-right"></a>
             </div>
             <div class="column">
-                <a><img src="assets/images/instagram-desk.jpg" id="desk-img"></a>
-                <a><img src="assets/images/instagram-smartphone.JPG" id="smartphone-img"></a>
+                <a><img src="assets/images/instagram-desk.jpg" id="desk-img" data-aos="fade-left"></a>
+                <a><img src="assets/images/instagram-smartphone.JPG" id="smartphone-img" data-aos="fade-left"></a>
             </div>
         </div>
     </section>
@@ -146,7 +149,7 @@
                 </div>
             </div>
 
-            <div id="contact-img-div">
+            <div id="contact-img-div" data-aos="fade-left">
                 <img src="assets/images/mailbox.svg" id="contact-img">
             </div>
         </div>
@@ -182,6 +185,15 @@
         .type("Content creator", {speed: 60})
         .go();
 
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 100,
+        delay: 40,
+        duration: 1000,
+        easing: 'ease-in-out'
+    });
 </script>
 </body>
 
